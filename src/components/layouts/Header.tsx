@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderContainer = styled.header``;
+const HeaderContainer = styled.header`
+  margin-top: 20px;
+`;
 
 const Nav = styled.nav`
   margin-top: 20px;

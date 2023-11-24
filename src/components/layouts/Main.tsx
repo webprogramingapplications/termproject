@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BannerContainer = styled.div`
   width: 100%;
@@ -33,6 +34,8 @@ const AuthLinks = styled.div`
   display: flex;
   margin-top: 10px;
   margin-left: 80%;
+  color: black;
+  text-decoration: none;
 `;
 
 const AuthLink = styled.a`
@@ -45,14 +48,20 @@ const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
 `;
 
 const Logo = styled.img``;
 
-const CompanyName = styled.span`
+const HeaderTitle = styled.div`
+  margin-left: 10%;
+`;
+
+const CompanyNameLink = styled(Link)`
   font-weight: 700;
   font-size: larger;
+  color: black;
+  text-decoration: none;
 `;
 
 const SearchContainer = styled.div`
@@ -72,30 +81,42 @@ const SearchBar = styled.input`
 const IconContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-right: 10%;
 `;
 
 const Icon = styled.div`
-  margin-left: 10px; /* 아이콘 사이의 간격을 조정 */
+  margin-left: 10px;
 `;
 
-const App: React.FC = () => {
+const Main: React.FC = () => {
+  const [isClosed, setIsClosed] = useState(false);
+
+  const handleClose = () => {
+    setIsClosed(true);
+  };
+
   return (
     <>
-      <BannerContainer>
-        <CouponText>
-          지금 가입하고, <StrongText>1만원 할인 쿠폰</StrongText> 받아가세요!
-        </CouponText>
-        <CloseButton>X</CloseButton>
-      </BannerContainer>
-      <AuthLinks>
-        <AuthLink href="/signup">회원가입</AuthLink>
-        <AuthLink href="/login">로그인</AuthLink>
-      </AuthLinks>
+      {!isClosed && (
+        <>
+          <BannerContainer>
+            <CouponText>
+              지금 가입하고, <StrongText>1만원 할인 쿠폰</StrongText>{" "}
+              받아가세요!
+            </CouponText>
+            <CloseButton onClick={handleClose}>X</CloseButton>
+          </BannerContainer>
+          <AuthLinks>
+            <AuthLink href="/join">회원가입</AuthLink>
+            <AuthLink href="/login">로그인</AuthLink>
+          </AuthLinks>
+        </>
+      )}
       <HeaderContainer>
-        <div>
+        <HeaderTitle>
           <Logo src="/path/to/logo.png" alt="IT마켓" />
-          <CompanyName>잇마켓</CompanyName>
-        </div>
+          <CompanyNameLink to="/">잇마켓</CompanyNameLink>
+        </HeaderTitle>
         <SearchContainer>
           <SearchBar type="text" placeholder="검색어를 입력해주세요" />
         </SearchContainer>
@@ -112,4 +133,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Main;
