@@ -22,9 +22,9 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <Nav>
-        <NavLink href="/new">신상품</NavLink>
-        <NavLink href="/best">베스트</NavLink>
-        <NavLink href="/specials">특가/혜택</NavLink>
+        <NavLink href="#">신상품</NavLink>
+        <NavLink href="#">베스트</NavLink>
+        <NavLink href="#">특가/혜택</NavLink>
       </Nav>
     </HeaderContainer>
   );

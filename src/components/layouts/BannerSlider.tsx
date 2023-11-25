@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import FirstBannerText from "./FirstBannerText";
+import FirstBanner from "./FirstBanner";
+import SecondBanner from "./SecondBanner";
+import ThirdBanner from "./ThirdBanner";
 
 const SliderContainer = styled.div`
   width: 100%;
@@ -22,11 +24,10 @@ const Slide = styled.div`
 const BannerSlider: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
-  // 이 부분에서 실제로 내용을 넣어주세요
   const banners = [
-    <FirstBannerText />,
-    "두 번째 배너",
-    "세 번째 배너",
+    <FirstBanner bgImage="" />,
+    <SecondBanner bgImage="https://i.postimg.cc/d0mvzqxQ/2023-11-24-11-48-26.png" />,
+    //<ThirdBanner bgImage="https://i.postimg.cc/d0mvzqxQ/2023-11-24-11-48-26.png" />,
     // 추가적인 배너 내용들
   ];
 
@@ -35,7 +36,7 @@ const BannerSlider: React.FC = () => {
       setSlideIndex((prevIndex) =>
         prevIndex === banners.length - 1 ? 0 : prevIndex + 1
       );
-    }, 2000);
+    }, 3000);
 
     return () => {
       clearInterval(slideInterval);
@@ -49,6 +50,7 @@ const BannerSlider: React.FC = () => {
           key={index}
           style={{
             transform: `translateX(-${slideIndex * 100}%)`,
+            transitionDelay: `${index * 0.5}s`, // 각 배너마다 0.5초씩 시간차 설정
           }}
         >
           {banner}

@@ -7,12 +7,14 @@ import Login from "./components/layouts/Login";
 import BannerSlider from "./components/layouts/BannerSlider";
 import Product from "./components/layouts/Product";
 import Footer from "./components/layouts/Footer";
+import Cart from "./components/layouts/Cart";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Routes>
         <Route path="/" element={<Header />} />

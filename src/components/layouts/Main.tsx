@@ -88,6 +88,12 @@ const Icon = styled.div`
   margin-left: 10px;
 `;
 
+const CartLink = styled(Link)`
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+`;
+
 const Main: React.FC = () => {
   const [isClosed, setIsClosed] = useState(false);
 
@@ -108,6 +114,7 @@ const Main: React.FC = () => {
           </BannerContainer>
           <AuthLinks>
             <AuthLink href="/join">회원가입</AuthLink>
+            <AuthLink>|</AuthLink>
             <AuthLink href="/login">로그인</AuthLink>
           </AuthLinks>
         </>
@@ -124,9 +131,11 @@ const Main: React.FC = () => {
           <Icon>
             <FaHeart />
           </Icon>
-          <Icon>
-            <FaShoppingCart />
-          </Icon>
+          <CartLink to="/cart">
+            <Icon>
+              <FaShoppingCart />
+            </Icon>
+          </CartLink>
         </IconContainer>
       </HeaderContainer>
     </>
