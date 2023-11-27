@@ -8,7 +8,6 @@ const SliderContainer = styled.div`
   height: 350px;
   background-color: #f2f2f2;
   overflow: hidden;
-  margin-top: 20px;
 `;
 
 const Slide = styled.div`

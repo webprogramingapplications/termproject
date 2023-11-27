@@ -112,13 +112,14 @@ const Main: React.FC = () => {
             </CouponText>
             <CloseButton onClick={handleClose}>X</CloseButton>
           </BannerContainer>
-          <AuthLinks>
-            <AuthLink href="/join">회원가입</AuthLink>
-            <AuthLink>|</AuthLink>
-            <AuthLink href="/login">로그인</AuthLink>
-          </AuthLinks>
         </>
       )}
+      <AuthLinks>
+        <AuthLink href="/join">회원가입</AuthLink>
+        <AuthLink>|</AuthLink>
+        <AuthLink href="/login">로그인</AuthLink>
+      </AuthLinks>
+
       <HeaderContainer>
         <HeaderTitle>
           <Logo src="/path/to/logo.png" alt="IT마켓" />

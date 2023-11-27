@@ -5,10 +5,12 @@ const HeaderContainer = styled.header`
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 20px 0;
 `;
 
 const Nav = styled.nav`
-  margin-top: 10px;
   margin-left: 30px;
 `;
 
