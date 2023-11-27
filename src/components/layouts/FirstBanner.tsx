@@ -18,7 +18,8 @@ const TextContainer = styled.div<{ bgImage: string }>`
 
 const Text = styled.span`
   margin-left: 30%;
-  margin-top: 20%;
+  margin-top: 80px;
+  display: block;
 `;
 
 const BoldText = styled.span`
@@ -35,14 +36,20 @@ const Text2 = styled.p`
   font-weight: 600;
 `;
 
+const Text3 = styled.p`
+  font-size: 18px;
+  margin-left: 30%;
+  margin-top: 70px;
+  font-weight: 600;
+`;
+
 const FirstBanner: React.FC<FirstBannerProps> = ({ bgImage }) => {
   return (
     <TextContainer bgImage={bgImage}>
       <Text>식탁의 품격을 높여줄 </Text>
-      <br />
       <BoldText>프리미엄 식품 블랙 특가</BoldText>
       <Text2>한우부터 발사믹까지, 최대 33% 할인</Text2>
-      <Text2>11.20-11.30</Text2>
+      <Text3>11.20-11.30</Text3>
     </TextContainer>
   );
 };
