@@ -8,6 +8,7 @@ import BannerSlider from "./components/layouts/BannerSlider";
 import Product from "./components/layouts/Product";
 import Footer from "./components/layouts/Footer";
 import Cart from "./components/layouts/Cart";
+import Contents from "./components/layouts/Contents";
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
       </Routes>
       <Routes>
         <Route path="/" element={<Product />} />
+        <Route path="/contents/:id" element={<Contents />} />
       </Routes>
       <Routes>
         <Route path="/" element={<Footer />} />

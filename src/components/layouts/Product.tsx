@@ -72,41 +72,49 @@ const AdditionalOffer = styled.div`
 
 const products = [
   {
+    id: "1",
     name: "[그릭데이] 그릭요거트 시그니처 450g",
     price: "13,500원",
     image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
   },
   {
+    id: "2",
     name: "[그릭데이] 그릭요거트 시그니처 450g",
     price: "13,500원",
     image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
   },
   {
+    id: "3",
     name: "[그릭데이] 그릭요거트 시그니처 450g",
     price: "13,500원",
     image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
   },
   {
+    id: "4",
     name: "[그릭데이] 그릭요거트 시그니처 450g",
     price: "13,500원",
     image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
   },
   {
-    name: "[그릭데이] 그릭요거트 시그니처 450g",
-    price: "13,500원",
-    image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
+    id: "5",
+    name: "[풀무원] 토이쿠키 만들기 캐치티니핑",
+    price: "9,980원",
+    image: "https://i.postimg.cc/D02ry0Rg/2023-11-27-9-44-40.png",
   },
   {
-    name: "[그릭데이] 그릭요거트 시그니처 450g",
-    price: "13,500원",
-    image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
+    id: "6",
+    name: "[서주] 딸기 생크림빵",
+    price: "9,240원",
+    image: "https://i.postimg.cc/brynjv5j/2023-11-27-9-50-20.png",
   },
   {
-    name: "[그릭데이] 그릭요거트 시그니처 450g",
-    price: "13,500원",
-    image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
+    id: "7",
+    name: "[제로밀] 글루텐프리 빵",
+    price: "8,455원",
+    image: "https://i.postimg.cc/Bv5f1Zmy/2023-11-27-9-47-27.png",
   },
   {
+    id: "8",
     name: "[그릭데이] 그릭요거트 시그니처 450g",
     price: "13,500원",
     image: "https://i.postimg.cc/MTmkk1Xj/2023-11-22-12-57-09.png",
