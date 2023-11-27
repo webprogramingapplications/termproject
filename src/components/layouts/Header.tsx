@@ -3,11 +3,13 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.header`
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 `;
 
 const Nav = styled.nav`
-  margin-top: 20px;
-  margin-left: 30%;
+  margin-top: 10px;
+  margin-left: 30px;
 `;
 
 const NavLink = styled.a`
