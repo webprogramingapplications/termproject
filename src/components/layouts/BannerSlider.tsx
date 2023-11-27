@@ -24,7 +24,7 @@ const BannerSlider: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
   const banners = [
-    <FirstBanner bgImage="" />,
+    <FirstBanner bgImage="https://i.postimg.cc/50tXtt7K/2023-11-27-2-04-35.png" />,
     <SecondBanner bgImage="https://i.postimg.cc/d0mvzqxQ/2023-11-24-11-48-26.png" />,
     // 여기에 추가적인 배너를 넣어보세요.
   ];
