@@ -11,7 +11,7 @@ const CartTitle = styled.div`
   text-align: center;
   font-size: 28px;
   font-weight: bold;
-  margin-top: 70px;
+  margin-top: 60px;
 `;
 
 const LeftContainer = styled.div`
